@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="הטיול שלי">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="theme-color" content="#1B2A4A">
+<title>הטיול שלי</title>
+<link rel="apple-touch-icon" href="data:image/png;base64,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">
+<link rel="icon" href="data:image/png;base64,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">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@500;700&family=Heebo:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>:root{--navy:#1B2A4A;--navy-2:#243a63;--paper:#F3EFE6;--paper-2:#EAE4D6;--card:#FBF9F4;--ink:#242220;--ink-soft:#6b6558;--ochre:#C68A3D;--teal:#2F6F63;--teal-soft:#DCE9E5;--line:#D8D2C2;--danger:#B4483A;--radius:14px}*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}html,body{margin:0;padding:0;background:var(--navy);overscroll-behavior-y:none}body{font-family:Heebo,system-ui,sans-serif;color:var(--ink);min-height:100vh;min-height:100dvh;display:flex;justify-content:center}#app{width:100%;max-width:520px;min-height:100vh;min-height:100dvh;background:var(--paper);display:flex;flex-direction:column;padding-top:env(safe-area-inset-top);padding-bottom:env(safe-area-inset-bottom)}header{background:var(--navy);color:var(--paper);padding:18px 20px 16px;border-radius:0 0 22px 22px;flex-shrink:0}.head-row{display:flex;align-items:flex-start;justify-content:space-between;gap:10px}.head-eyebrow{font-size:13px;color:#b9c3d6;margin:0 0 2px}.head-date{font-family:Frank Ruhl Libre,serif;font-weight:700;font-size:26px;margin:0;line-height:1.25}.bell-btn{background:#ffffff1f;border:1px solid rgba(255,255,255,.2);color:var(--paper);border-radius:999px;padding:9px 14px;font-size:13px;font-family:inherit;white-space:nowrap;flex-shrink:0}.bell-btn.on{background:var(--teal);border-color:var(--teal)}.day-strip{display:flex;gap:7px;margin-top:16px;overflow-x:auto;padding-bottom:2px}.day-pill{flex:1 0 auto;min-width:42px;background:transparent;border:1px solid rgba(255,255,255,.25);color:#cbd4e4;border-radius:12px;padding:8px 4px 7px;font-family:inherit;font-size:13px;text-align:center;position:relative}.day-pill .n{display:block;font-size:15px;font-weight:600;margin-top:2px}.day-pill.today{border-color:var(--ochre);color:#fff}.day-pill.selected{background:var(--paper);color:var(--navy);border-color:var(--paper)}.day-pill.selected .n{color:var(--navy)}.day-dot{position:absolute;top:6px;left:8px;width:5px;height:5px;border-radius:50%;background:var(--ochre)}.day-pill.selected .day-dot{background:var(--teal)}.info-note{margin:12px 20px 0;background:#eff3f1;border:1px solid var(--teal-soft);color:var(--ink-soft);font-size:12.5px;line-height:1.6;padding:10px 12px;border-radius:10px;display:flex;gap:8px;align-items:flex-start}.info-note button{background:none;border:none;color:var(--teal);font-family:inherit;font-size:12.5px;font-weight:600;padding:0;flex-shrink:0;margin-right:auto}main{flex:1;overflow-y:auto;padding:18px 20px 100px}section{margin-bottom:26px}.sec-head{display:flex;align-items:baseline;justify-content:space-between;margin-bottom:10px}.sec-title{font-family:Frank Ruhl Libre,serif;font-weight:700;font-size:19px;color:var(--navy);margin:0}.sec-add{background:var(--navy);color:var(--paper);border:none;border-radius:10px;padding:7px 13px;font-family:inherit;font-size:13px;font-weight:600}.timeline-wrap{background:var(--card);border-radius:var(--radius);border:1px solid var(--line);overflow:hidden}.timeline-scroll{max-height:420px;overflow-y:auto;position:relative}.timeline{position:relative}.hour-row{display:flex;height:56px;border-bottom:1px solid var(--line)}.hour-row:last-child{border-bottom:none}.hour-label{width:52px;flex-shrink:0;font-size:11.5px;color:var(--ink-soft);padding:6px 8px 0 0;text-align:left;border-left:1px solid var(--line)}.hour-track{flex:1;position:relative}.events-layer{position:absolute;top:0;right:52px;left:0;height:100%}.event-block{position:absolute;right:6px;left:6px;background:var(--teal-soft);border-right:4px solid var(--teal);border-radius:8px;padding:5px 9px;font-size:12.5px;color:var(--navy);overflow:hidden;display:flex;flex-direction:column;gap:1px}.event-block b{font-size:13px;font-weight:600}.event-block .t{font-size:11px;color:var(--ink-soft)}.event-block .rm{font-size:11px;color:var(--ochre)}.event-del{position:absolute;top:3px;left:5px;background:none;border:none;color:var(--ink-soft);font-size:14px;line-height:1;padding:2px}.now-line{position:absolute;right:0;left:0;height:0;border-top:2px solid var(--danger);z-index:5}.now-line:before{content:"";position:absolute;right:-2px;top:-4px;width:8px;height:8px;border-radius:50%;background:var(--danger)}.empty-msg{padding:20px 16px;text-align:center;color:var(--ink-soft);font-size:13.5px}.form-card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:14px;margin-bottom:12px;display:none}.form-card.open{display:block}.form-card label{display:block;font-size:12px;color:var(--ink-soft);margin:8px 0 3px}.form-card label:first-of-type{margin-top:0}.chip-row{display:flex;gap:6px;flex-wrap:wrap}.chip{border:1px solid var(--line);background:#fff;color:var(--ink);border-radius:999px;padding:6px 12px;font-family:inherit;font-size:13px;min-width:38px}.chip.sel{background:var(--navy);color:var(--paper);border-color:var(--navy)}.form-card textarea{width:100%;height:130px;border:1px solid var(--line);border-radius:9px;padding:9px 10px;font-family:inherit;font-size:14px;background:#fff;color:var(--ink);resize:vertical}.bulk-hint{font-size:11.5px;color:var(--ink-soft);line-height:1.6;margin-top:6px}.bulk-preview{font-size:13px;line-height:1.7;margin-top:8px}.bulk-preview .err{color:var(--danger)}.bulk-preview .day{font-weight:700;color:var(--navy);margin-top:4px}.hour-track,.events-layer{cursor:pointer}.form-card input[type=text],.form-card input[type=number]{width:100%;border:1px solid var(--line);border-radius:9px;padding:9px 10px;font-family:inherit;font-size:14px;background:#fff;color:var(--ink)}.time-row{display:flex;gap:10px}.time-row>div{flex:1}.form-card input[type=time],.form-card input[type=date]{width:100%;border:1px solid var(--line);border-radius:9px;padding:8px 10px;font-family:inherit;font-size:14px;background:#fff;color:var(--ink)}.remind-row{display:flex;align-items:center;gap:8px;margin-top:10px;font-size:13px;color:var(--ink)}.form-actions{display:flex;gap:8px;margin-top:12px}.form-actions button{font-family:inherit;font-size:13.5px;font-weight:600;border-radius:9px;padding:9px 14px;border:none;flex:1}.btn-save{background:var(--teal);color:#fff}.btn-cancel{background:var(--paper-2);color:var(--ink)}.todo-quickadd{display:flex;gap:8px;margin-bottom:10px}.todo-quickadd input[type=text],.todo-quickadd input[type=number]{flex:1;border:1px solid var(--line);border-radius:10px;padding:10px 12px;font-family:inherit;font-size:14px;background:var(--card);color:var(--ink)}.todo-quickadd button{background:var(--navy);color:var(--paper);border:none;border-radius:10px;padding:0 16px;font-size:20px;font-family:inherit}.todo-list{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden}.todo-item{display:flex;align-items:flex-start;gap:10px;padding:11px 13px;border-bottom:1px solid var(--line)}.todo-item:last-child{border-bottom:none}.todo-check{width:20px;height:20px;border-radius:6px;border:2px solid var(--teal);flex-shrink:0;margin-top:1px;background:#fff;display:flex;align-items:center;justify-content:center;font-size:13px;color:#fff}.todo-item.done .todo-check{background:var(--teal)}.todo-body{flex:1;min-width:0}.todo-text{font-size:14.5px;line-height:1.4;word-break:break-word}.todo-item.done .todo-text{color:var(--ink-soft);text-decoration:line-through}.todo-meta{font-size:11.5px;color:var(--ochre);margin-top:2px}.todo-stats{font-size:11.5px;color:var(--ink-soft);margin-top:4px;display:flex;gap:12px}.todo-stats .ok{color:var(--teal)}.todo-stats .miss{color:var(--danger)}.todo-del{background:none;border:none;color:var(--ink-soft);font-size:16px;padding:2px 4px;flex-shrink:0}.log-row{display:flex;align-items:center;justify-content:space-between;gap:8px;padding:10px 13px;border-bottom:1px solid var(--line);font-size:13.5px}.log-row:last-child{border-bottom:none}.log-row .log-main{flex:1;min-width:0}.log-row .log-sub{font-size:11.5px;color:var(--ink-soft);margin-top:1px}.sec-sub{font-size:12px;color:var(--ink-soft);margin:-6px 0 10px}.now-card{margin:14px 20px 0;background:var(--navy-2);color:var(--paper);border-radius:16px;padding:14px 16px;display:flex;flex-direction:column;gap:8px}.now-row{display:flex;align-items:center;gap:8px;font-size:13.5px}.now-row b{font-weight:700}.now-badge{background:var(--ochre);color:var(--navy);font-size:11px;font-weight:700;padding:2px 8px;border-radius:999px;flex-shrink:0}.now-progress-bar{background:#ffffff26;border-radius:999px;height:6px;overflow:hidden;margin-top:2px}.now-progress-fill{background:var(--teal);height:100%;border-radius:999px}.cat-row{display:flex;gap:6px;margin-top:8px;flex-wrap:wrap}.cat-pill{border:2px solid transparent;border-radius:999px;padding:6px 12px;font-family:inherit;font-size:12.5px;color:#fff;opacity:.55}.cat-pill.sel{opacity:1;border-color:var(--navy)}.streak-chip{color:var(--ochre);font-weight:600}.milestone-badge{flex-shrink:0;font-size:11.5px;font-weight:700;padding:4px 10px;border-radius:999px;background:var(--teal-soft);color:var(--teal);white-space:nowrap}.milestone-badge.urgent{background:var(--danger);color:#fff}.milestone-badge.today{background:var(--ochre);color:var(--navy)}.shabbat-row{display:flex;justify-content:space-between;font-size:14px;padding:3px 0}.shabbat-row b{font-weight:700}.shabbat-parasha{font-size:12.5px;color:#b9c3d6;margin-bottom:4px}.stat-row{padding:10px 13px;border-bottom:1px solid var(--line)}.stat-row:last-child{border-bottom:none}.stat-head{display:flex;justify-content:space-between;font-size:13px;margin-bottom:5px}.stat-bar{background:var(--paper-2);border-radius:999px;height:8px;overflow:hidden}.stat-fill{background:var(--teal);height:100%;border-radius:999px}.week-chart{display:flex;align-items:flex-end;gap:6px;height:90px;padding:12px 13px 6px}.week-bar-wrap{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:flex-end;height:100%;gap:4px}.week-bar{width:100%;background:var(--teal);border-radius:5px 5px 0 0;min-height:3px}.week-bar-label{font-size:10.5px;color:var(--ink-soft)}.opt-row{display:flex;align-items:center;gap:10px;padding:11px 13px;border-bottom:1px solid var(--line)}.opt-row:last-child{border-bottom:none}.opt-row .opt-time{font-size:22px;font-weight:700;color:var(--navy);min-width:64px;direction:ltr;text-align:right}.opt-row .opt-info{flex:1;font-size:13px;color:var(--ink-soft)}.opt-row.rec{background:#e7f1ee}.opt-row.rec .opt-info{color:var(--teal);font-weight:600}.focus-clock{font-size:60px;font-weight:700;color:var(--navy);text-align:center;margin:12px 0;direction:ltr;font-variant-numeric:tabular-nums}.focus-clock.run{color:var(--teal)}.card-face{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:22px 16px;text-align:center;min-height:110px;font-size:18px;line-height:1.5;display:flex;align-items:center;justify-content:center;white-space:pre-wrap;word-break:break-word;margin-bottom:10px}.card-face.ans{background:#e7f1ee;color:var(--navy)}.card-prog{font-size:12px;color:var(--ink-soft);text-align:center;margin-bottom:8px}.backup-actions{display:flex;gap:8px;margin-bottom:10px}.backup-actions button{flex:1;font-family:inherit;font-size:13px;font-weight:600;padding:9px;border-radius:9px;border:1px solid var(--line);background:var(--card);color:var(--navy)}.backup-box{display:none;margin-top:8px}.backup-box.open{display:block}.backup-box textarea{width:100%;height:110px;border:1px solid var(--line);border-radius:9px;padding:8px;font-family:monospace;font-size:11px;direction:ltr;text-align:left;background:#fff;color:var(--ink);resize:vertical}.backup-box .form-actions{margin-top:8px}.toast{position:fixed;bottom:24px;left:50%;transform:translate(-50%);background:var(--navy);color:var(--paper);padding:12px 18px;border-radius:12px;font-size:13.5px;box-shadow:0 8px 24px #00000040;max-width:90%;z-index:50;opacity:0;transition:opacity .25s,transform .25s;pointer-events:none}.toast.show{opacity:1;transform:translate(-50%) translateY(-4px)}.tile-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:26px}.tile{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:14px 14px 12px;text-align:right;font-family:inherit;color:var(--ink);display:flex;flex-direction:column;gap:3px;min-height:92px;transition:transform .12s ease,border-color .12s ease}.tile:active{transform:scale(.97);border-color:var(--teal)}.tile-ico{font-size:24px;line-height:1.1}.tile-name{font-family:Frank Ruhl Libre,serif;font-weight:700;font-size:16.5px;color:var(--navy);margin-top:2px}.tile-sum{font-size:12.5px;color:var(--teal);font-weight:600;min-height:16px}.panel{display:none}.panel.open{display:block}.panel-back{background:var(--paper-2);color:var(--navy);border:none;border-radius:10px;padding:8px 14px;font-family:inherit;font-size:13.5px;font-weight:600;margin-bottom:14px}.tile-grid.hidden{display:none}.mini-label{display:block;font-size:12px;color:var(--ink-soft);margin:0 0 6px}.sub-title{font-family:Frank Ruhl Libre,serif;font-weight:700;font-size:16.5px;color:var(--navy);margin:24px 0 4px}.chip.sm{padding:4px 9px;font-size:12.5px;min-width:32px}.manage-row{padding:10px 13px;border-bottom:1px solid var(--line)}.manage-row:last-child{border-bottom:none}.manage-top{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-bottom:8px;font-size:14px}::-webkit-scrollbar{width:0;height:0}.trip-select{width:100%; border:1px solid var(--line); border-radius:9px; padding:9px 10px; margin-top:8px; font-family:inherit; font-size:14px; background:#fff; color:var(--ink);}.trip-clocks{display:flex; gap:8px; margin-bottom:10px;}.trip-clock{flex:1; background:var(--card); border:1px solid var(--line); border-radius:var(--radius); padding:10px; text-align:center;}.trip-clock-name{font-size:12px; color:var(--ink-soft);}.trip-clock-time{font-size:26px; font-weight:700; color:var(--navy); direction:ltr; font-variant-numeric:tabular-nums;}.trip-day{font-weight:700; color:var(--navy); margin:14px 2px 6px; font-size:14px;}.trip-day.today{color:var(--teal);}.trip-card{background:var(--card); border:1px solid var(--line); border-radius:var(--radius); padding:10px 12px; margin-bottom:8px;}.trip-head{display:flex; align-items:center; gap:8px;}.trip-ico{font-size:20px;}.trip-title{flex:1; font-weight:600; font-size:15px; word-break:break-word;}.trip-line{font-size:13px; margin-top:4px; word-break:break-word;}.trip-line.strong{font-weight:600; color:var(--navy);}.trip-line.soft{color:var(--ink-soft);}.trip-line.code{font-family:monospace; direction:ltr; text-align:right; color:var(--teal);}</style>
+</head>
+<body>
+<div id="app">
+  <header>
+    <div class="head-row">
+      <div>
+        <p class="head-eyebrow">הטיול שלי 🌴</p>
+        <p class="head-date" id="tileSumTrip">—</p>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="panel open" data-panel="trip">
+      <div class="sec-head">
+        <h2 class="sec-title">הטיול 🌴</h2>
+        <button class="sec-add" id="tripAddBtn" type="button">+ פריט</button>
+      </div>
+      <p class="sec-sub">ניו יורק, אורלנדו ומיאמי באותו אזור זמן. ההפרש מישראל כרגע: <span id="tripDiff"></span></p>
+      <div class="trip-clocks">
+        <div class="trip-clock"><div class="trip-clock-name">ארה״ב (מזרח)</div><div class="trip-clock-time" id="tripClockNY">--:--</div></div>
+        <div class="trip-clock"><div class="trip-clock-name">ישראל</div><div class="trip-clock-time" id="tripClockIL">--:--</div></div>
+      </div>
+      <div class="now-card" id="tripNext" style="margin:0 0 12px;"></div>
+      <div class="form-card" id="tripForm">
+        <div class="chip-row" id="tripTypeRow" style="margin-bottom:10px;">
+          <button class="chip sel" type="button" data-type="flight">✈️ טיסה</button>
+          <button class="chip" type="button" data-type="hotel">🏨 מלון</button>
+          <button class="chip" type="button" data-type="ticket">🎟️ כרטיס</button>
+          <button class="chip" type="button" data-type="car">🚗 רכב</button>
+          <button class="chip" type="button" data-type="other">📌 אחר</button>
+        </div>
+        <input type="text" id="tripTitle" placeholder="שם">
+        <div class="time-row" style="margin-top:8px;">
+          <div><input type="text" id="tripFrom" placeholder="מקום"></div>
+          <div id="tripToWrap"><input type="text" id="tripTo" placeholder="יעד"></div>
+        </div>
+        <label id="tripStartLabel">מועד</label>
+        <div class="time-row">
+          <div><input type="date" id="tripDate"></div>
+          <div><input type="time" id="tripTime"></div>
+        </div>
+        <select id="tripTz" class="trip-select"><option value="ET">שעון ארה״ב (מזרח)</option><option value="IL">שעון ישראל</option></select>
+        <div id="tripEndWrap">
+          <label id="tripEndLabel">סיום</label>
+          <div class="time-row">
+            <div><input type="date" id="tripEndDate"></div>
+            <div><input type="time" id="tripEndTime"></div>
+          </div>
+          <select id="tripEndTz" class="trip-select"><option value="ET">שעון ארה״ב (מזרח)</option><option value="IL">שעון ישראל</option></select>
+        </div>
+        <label>קוד הזמנה (לא חובה)</label>
+        <input type="text" id="tripCode" placeholder="למשל ABC123">
+        <label>הערה (לא חובה)</label>
+        <input type="text" id="tripNote" placeholder="טרמינל, מספר חדר, מה להביא">
+        <p class="bulk-hint">שעת הטיסה נכתבת לפי שעון שדה התעופה, כמו שמופיע בכרטיס: המראה לפי שעון שדה היציאה, ונחיתה לפי שעון שדה היעד.</p>
+        <div class="form-actions">
+          <button class="btn-save" id="tripSaveBtn" type="button">שמירה</button>
+          <button class="btn-cancel" id="tripCancelBtn" type="button">ביטול</button>
+        </div>
+      </div>
+      <div id="tripTimeline"></div>
+      <h3 class="sub-title">רשימת הכנות</h3>
+      <div class="todo-list" id="tripChecks"></div>
+      <div class="todo-quickadd" style="margin-top:8px;">
+        <input type="text" id="tripCheckInput" placeholder="להוסיף לרשימה">
+        <button id="tripCheckAdd" type="button">+</button>
+      </div>
+      <h3 class="sub-title">גיבוי הטיול</h3>
+      <div class="backup-actions">
+        <button id="tripExportBtn" type="button">ייצוא כטקסט</button>
+        <button id="tripImportBtn" type="button">ייבוא</button>
+      </div>
+      <div class="backup-box open"><textarea id="tripBackupText" style="display:none;"></textarea></div>
+    </section>
+
+  </main>
+</div>
+<div class="toast" id="toast"></div>
+<script>(function(){"use strict";
+var KEY="tripplanner_v1";
+var i=loadS();
+function emptyTrip(){ return {items:[],checks:{},extra:[]}; }
+function loadS(){
+  try{ var r=localStorage.getItem(KEY); if(r){ var t=JSON.parse(r); if(!t.trip) t.trip=emptyTrip(); return t; } }catch(e){}
+  try{ var m=JSON.parse(localStorage.getItem("dayplanner_v1")); if(m && m.trip && m.trip.items && m.trip.items.length) return {trip:m.trip}; }catch(e){}
+  return {trip:emptyTrip()};
+}
+function h(){ try{ localStorage.setItem(KEY,JSON.stringify(i)); }catch(e){} try{ tripTile(); }catch(e){} }
+function p(e){var t=document.getElementById("toast");t.textContent=e,t.classList.add("show"),clearTimeout(p._tm),p._tm=setTimeout(function(){t.classList.remove("show")},3200)}
+function tripS(){ if(!i.trip) i.trip = { items:[], checks:{}, extra:[] }; if(!i.trip.items) i.trip.items = []; if(!i.trip.checks) i.trip.checks = {}; if(!i.trip.extra) i.trip.extra = []; return i.trip; }
+function tripSave(){ h(); }
+function tripToast(m){ p(m); }
+var TRIP_TYPES = { flight:{ico:'✈️',name:'טיסה'}, hotel:{ico:'🏨',name:'מלון'}, ticket:{ico:'🎟️',name:'כרטיס/אטרקציה'}, car:{ico:'🚗',name:'רכב'}, other:{ico:'📌',name:'אחר'} };
+var TRIP_DAYS = ['ראשון','שני','שלישי','רביעי','חמישי','שישי','שבת'];
+var TRIP_MONTHS = ['ינואר','פברואר','מרץ','אפריל','מאי','יוני','יולי','אוגוסט','ספטמבר','אוקטובר','נובמבר','דצמבר'];
+var TRIP_CHECKS = ['דרכון בתוקף לכל הנוסעים','אישור ESTA (או ויזה) לכל הנוסעים','ביטוח נסיעות','כרטיסי טיסה ואישורי מלונות שמורים גם בלי אינטרנט','כרטיס אשראי והודעה לבנק על הנסיעה','מטען, סוללה ניידת ומתאם לשקע אמריקאי','חבילת גלישה או eSIM','הזמנות לאטרקציות וקודי כניסה'];
+var tripType = 'flight', tripEditId = null;
+function tripZone(tz){ return tz === 'IL' ? 'Asia/Jerusalem' : 'America/New_York'; }
+function tripZoneLabel(tz){ return tz === 'IL' ? 'שעון ישראל' : 'שעון ארה״ב (מזרח)'; }
+function tripOffset(utcMs, zone){
+  var f = new Intl.DateTimeFormat('en-US', { timeZone:zone, hourCycle:'h23', year:'numeric', month:'numeric', day:'numeric', hour:'numeric', minute:'numeric', second:'numeric' });
+  var parts = {};
+  f.formatToParts(new Date(utcMs)).forEach(function(x){ parts[x.type] = +x.value; });
+  var asUTC = Date.UTC(parts.year, parts.month-1, parts.day, parts.hour, parts.minute, parts.second);
+  return asUTC - Math.floor(utcMs/1000)*1000;
+}
+function tripToUTC(dateStr, timeStr, tz){
+  if(!dateStr) return null;
+  var d = dateStr.split('-'), t = (timeStr || '00:00').split(':');
+  var guess = Date.UTC(+d[0], +d[1]-1, +d[2], +t[0], +t[1]);
+  var zone = tripZone(tz);
+  var res = guess - tripOffset(guess, zone);
+  var off2 = tripOffset(res, zone);
+  res = guess - off2;
+  return res;
+}
+function tripFmtIn(ms, tz, withDate){
+  var o = { timeZone: tripZone(tz), hourCycle:'h23', hour:'2-digit', minute:'2-digit' };
+  if(withDate){ o.day = 'numeric'; o.month = 'numeric'; }
+  return new Intl.DateTimeFormat('he-IL', o).format(new Date(ms));
+}
+function tripDateParts(s){ var d = s.split('-'); return new Date(+d[0], +d[1]-1, +d[2]); }
+function tripDayDiff(a, b){ var x = a.split('-'), y = b.split('-'); return Math.round((Date.UTC(+y[0],+y[1]-1,+y[2]) - Date.UTC(+x[0],+x[1]-1,+x[2]))/86400000); }
+function tripTodayStr(){ var d = new Date(); return d.getFullYear() + '-' + ('0'+(d.getMonth()+1)).slice(-2) + '-' + ('0'+d.getDate()).slice(-2); }
+function tripRemaining(ms){
+  var d = Math.floor(ms/86400000), hh = Math.floor((ms%86400000)/3600000), mm = Math.floor((ms%3600000)/60000);
+  if(d >= 2) return d + ' ימים' + (hh ? ' ו-' + hh + ' שעות' : '');
+  if(d === 1) return 'יום' + (hh ? ' ו-' + hh + ' שעות' : '');
+  if(hh > 0) return hh + ' שעות' + (mm ? ' ו-' + mm + ' דקות' : '');
+  return mm + ' דקות';
+}
+function tripDurText(ms){
+  var hh = Math.floor(ms/3600000), mm = Math.round((ms%3600000)/60000);
+  return hh + ' ש׳' + (mm ? ' ' + mm + ' ד׳' : '');
+}
+function tripSorted(){
+  return tripS().items.slice().sort(function(a,b){
+    return (tripToUTC(a.date, a.time, a.tz) || 0) - (tripToUTC(b.date, b.time, b.tz) || 0);
+  });
+}
+function tripEl(id){ return document.getElementById(id); }
+function tripSetText(id, t){ var e = tripEl(id); if(e) e.textContent = t; }
+
+function tripLabels(type){
+  var L = {
+    flight:{ title:'טיסה, למשל LY001', from:'משדה (למשל TLV)', to:'לשדה (למשל JFK)', start:'המראה', end:'נחיתה', toRow:true, endRow:true },
+    hotel: { title:'שם המלון', from:'כתובת או עיר', to:'', start:'צ׳ק-אין', end:'צ׳ק-אאוט', toRow:false, endRow:true },
+    car:   { title:'השכרת רכב', from:'מקום איסוף', to:'מקום החזרה', start:'איסוף', end:'החזרה', toRow:true, endRow:true },
+    ticket:{ title:'שם האטרקציה', from:'מקום', to:'', start:'מועד כניסה', end:'', toRow:false, endRow:false },
+    other: { title:'מה זה?', from:'מקום', to:'', start:'מועד', end:'', toRow:false, endRow:false }
+  };
+  return L[type] || L.other;
+}
+function tripApplyType(){
+  var L = tripLabels(tripType);
+  Array.prototype.forEach.call(document.querySelectorAll('#tripTypeRow .chip'), function(c){ c.classList.toggle('sel', c.getAttribute('data-type') === tripType); });
+  tripEl('tripTitle').placeholder = L.title;
+  tripEl('tripFrom').placeholder = L.from;
+  tripEl('tripTo').placeholder = L.to;
+  tripEl('tripToWrap').style.display = L.toRow ? '' : 'none';
+  tripEl('tripEndWrap').style.display = L.endRow ? '' : 'none';
+  tripSetText('tripStartLabel', L.start);
+  tripSetText('tripEndLabel', L.end);
+}
+function tripResetForm(){
+  tripEditId = null;
+  ['tripTitle','tripFrom','tripTo','tripDate','tripTime','tripEndDate','tripEndTime','tripCode','tripNote'].forEach(function(id){ tripEl(id).value = ''; });
+  tripEl('tripTz').value = 'ET'; tripEl('tripEndTz').value = 'ET';
+  tripApplyType();
+}
+function tripOpenForm(){ tripEl('tripForm').classList.add('open'); }
+function tripCloseForm(){ tripEl('tripForm').classList.remove('open'); tripResetForm(); }
+
+function tripSaveItem(){
+  var title = tripEl('tripTitle').value.trim(), date = tripEl('tripDate').value;
+  if(!title){ tripToast('צריך לכתוב שם'); return; }
+  if(!date){ tripToast('צריך לבחור תאריך'); return; }
+  var L = tripLabels(tripType);
+  var item = {
+    id: tripEditId || (Date.now().toString(36) + Math.random().toString(36).slice(2,6)),
+    type: tripType, title: title,
+    from: tripEl('tripFrom').value.trim(), to: L.toRow ? tripEl('tripTo').value.trim() : '',
+    date: date, time: tripEl('tripTime').value, tz: tripEl('tripTz').value,
+    endDate: L.endRow ? tripEl('tripEndDate').value : '', endTime: L.endRow ? tripEl('tripEndTime').value : '', endTz: tripEl('tripEndTz').value,
+    code: tripEl('tripCode').value.trim(), note: tripEl('tripNote').value.trim()
+  };
+  var t = tripS();
+  if(tripEditId){ t.items = t.items.map(function(x){ return x.id === tripEditId ? item : x; }); }
+  else t.items.push(item);
+  tripCloseForm();
+  tripSave();
+  tripToast('נשמר');
+}
+function tripEditItem(it){
+  tripType = it.type || 'other';
+  tripApplyType();
+  tripEditId = it.id;
+  tripEl('tripTitle').value = it.title || ''; tripEl('tripFrom').value = it.from || ''; tripEl('tripTo').value = it.to || '';
+  tripEl('tripDate').value = it.date || ''; tripEl('tripTime').value = it.time || ''; tripEl('tripTz').value = it.tz || 'ET';
+  tripEl('tripEndDate').value = it.endDate || ''; tripEl('tripEndTime').value = it.endTime || ''; tripEl('tripEndTz').value = it.endTz || 'ET';
+  tripEl('tripCode').value = it.code || ''; tripEl('tripNote').value = it.note || '';
+  tripOpenForm();
+  tripEl('tripForm').scrollIntoView({ block:'start' });
+}
+
+function tripLine(txt, cls){ var d = document.createElement('div'); d.className = cls || 'trip-line'; d.textContent = txt; return d; }
+function tripOtherZoneText(it){
+  if(!it.time) return '';
+  var ms = tripToUTC(it.date, it.time, it.tz);
+  var other = it.tz === 'IL' ? 'ET' : 'IL';
+  var base = it.tz === 'IL' ? 'בארה״ב' : 'בישראל';
+  var txt = tripFmtIn(ms, other, false);
+  var dd = tripDayDiff(it.date, tripFmtDateIn(ms, other));
+  return base + ': ' + txt + (dd > 0 ? ' (למחרת)' : (dd < 0 ? ' (יום קודם)' : ''));
+}
+function tripFmtDateIn(ms, tz){
+  var parts = {};
+  new Intl.DateTimeFormat('en-US', { timeZone: tripZone(tz), year:'numeric', month:'2-digit', day:'2-digit' }).formatToParts(new Date(ms)).forEach(function(x){ parts[x.type] = x.value; });
+  return parts.year + '-' + parts.month + '-' + parts.day;
+}
+function tripCard(it){
+  var T = TRIP_TYPES[it.type] || TRIP_TYPES.other;
+  var card = document.createElement('div'); card.className = 'trip-card';
+  var head = document.createElement('div'); head.className = 'trip-head';
+  var ico = document.createElement('span'); ico.className = 'trip-ico'; ico.textContent = T.ico;
+  var ttl = document.createElement('div'); ttl.className = 'trip-title'; ttl.textContent = it.title;
+  var ed = document.createElement('button'); ed.className = 'todo-del'; ed.type = 'button'; ed.textContent = '✎';
+  ed.addEventListener('click', function(){ tripEditItem(it); });
+  var del = document.createElement('button'); del.className = 'todo-del'; del.type = 'button'; del.textContent = '✕';
+  del.addEventListener('click', function(){
+    if(!confirm('למחוק את "' + it.title + '"?')) return;
+    var t = tripS(); t.items = t.items.filter(function(x){ return x.id !== it.id; }); tripSave();
+  });
+  head.appendChild(ico); head.appendChild(ttl); head.appendChild(ed); head.appendChild(del);
+  card.appendChild(head);
+  var L = tripLabels(it.type);
+  if(it.time) card.appendChild(tripLine(L.start + ': ' + it.time + ' · ' + tripZoneLabel(it.tz), 'trip-line strong'));
+  var oz = tripOtherZoneText(it); if(oz) card.appendChild(tripLine(oz, 'trip-line soft'));
+  if(it.from || it.to){
+    card.appendChild(tripLine(it.type === 'flight' ? ((it.from || '?') + '  ←  ' + (it.to || '?')) : (it.to ? ('מ-' + it.from + ' ל-' + it.to) : it.from)));
+  }
+  if(it.endDate){
+    var s = tripToUTC(it.date, it.time, it.tz), e = tripToUTC(it.endDate, it.endTime, it.endTz);
+    var txt = L.end + ': ' + it.endDate.split('-').reverse().slice(0,2).join('/') + (it.endTime ? ' ' + it.endTime + ' · ' + tripZoneLabel(it.endTz) : '');
+    if(it.type === 'flight' && it.time && it.endTime && e > s) txt += ' · משך ' + tripDurText(e - s);
+    if(it.type === 'hotel'){ var n = tripDayDiff(it.date, it.endDate); if(n > 0) txt += ' · ' + n + (n === 1 ? ' לילה' : ' לילות'); }
+    card.appendChild(tripLine(txt));
+  }
+  if(it.code) card.appendChild(tripLine('קוד הזמנה: ' + it.code, 'trip-line code'));
+  if(it.note) card.appendChild(tripLine(it.note, 'trip-line soft'));
+  return card;
+}
+function tripRenderTimeline(){
+  var box = tripEl('tripTimeline'); if(!box) return;
+  box.innerHTML = '';
+  var items = tripSorted();
+  if(!items.length){
+    var em = document.createElement('div'); em.className = 'empty-msg'; em.textContent = 'עדיין אין פריטים. לחץ "+ פריט" והוסף טיסה, מלון או כרטיס.'; box.appendChild(em); return;
+  }
+  var first = items[0].date, today = tripTodayStr(), cur = null;
+  items.forEach(function(it){
+    if(it.date !== cur){
+      cur = it.date;
+      var d = tripDateParts(it.date);
+      var h3 = document.createElement('div'); h3.className = 'trip-day' + (it.date === today ? ' today' : '');
+      var n = tripDayDiff(first, it.date) + 1;
+      h3.textContent = 'יום ' + TRIP_DAYS[d.getDay()] + ', ' + d.getDate() + ' ב' + TRIP_MONTHS[d.getMonth()] + ' · יום ' + n + (it.date === today ? ' · היום' : '');
+      box.appendChild(h3);
+    }
+    box.appendChild(tripCard(it));
+  });
+}
+function tripRenderNext(){
+  var el = tripEl('tripNext'); if(!el) return;
+  var items = tripSorted(), now = Date.now(), today = tripTodayStr();
+  if(!items.length){ el.textContent = 'הוסף את הטיסה הראשונה כדי להתחיל'; return; }
+  var upcoming = items.filter(function(it){ return (tripToUTC(it.date, it.time, it.tz) || 0) >= now; })[0];
+  if(!upcoming){ el.textContent = 'כל הפריטים כבר עברו. טיול מוצלח היה! 🌴'; return; }
+  var T = TRIP_TYPES[upcoming.type] || TRIP_TYPES.other;
+  var ms = tripToUTC(upcoming.date, upcoming.time, upcoming.tz) - now;
+  var pre = '';
+  if(tripDayDiff(today, items[0].date) > 0) pre = 'הטיול מתחיל בעוד ' + tripDayDiff(today, items[0].date) + (tripDayDiff(today, items[0].date) === 1 ? ' יום' : ' ימים') + '. ';
+  el.textContent = pre + 'הבא בתור: ' + T.ico + ' ' + upcoming.title + (upcoming.time ? ' (' + upcoming.time + ')' : '') + ' · בעוד ' + tripRemaining(ms);
+}
+function tripClocks(){
+  var now = Date.now();
+  tripSetText('tripClockNY', tripFmtIn(now, 'ET', false));
+  tripSetText('tripClockIL', tripFmtIn(now, 'IL', false));
+  var diff = Math.round((tripOffset(now, 'Asia/Jerusalem') - tripOffset(now, 'America/New_York'))/3600000);
+  tripSetText('tripDiff', diff + ' שעות');
+}
+function tripRenderChecks(){
+  var box = tripEl('tripChecks'); if(!box) return;
+  box.innerHTML = '';
+  var t = tripS();
+  function row(text, done, onToggle, onDel){
+    var r = document.createElement('div'); r.className = 'todo-item' + (done ? ' done' : '');
+    var c = document.createElement('div'); c.className = 'todo-check'; c.textContent = done ? '✓' : '';
+    var b = document.createElement('div'); b.className = 'todo-body';
+    var x = document.createElement('div'); x.className = 'todo-text'; x.textContent = text;
+    b.appendChild(x); r.appendChild(c); r.appendChild(b);
+    r.addEventListener('click', onToggle);
+    if(onDel){
+      var d = document.createElement('button'); d.className = 'todo-del'; d.type = 'button'; d.textContent = '✕';
+      d.addEventListener('click', function(ev){ ev.stopPropagation(); onDel(); });
+      r.appendChild(d);
+    }
+    box.appendChild(r);
+  }
+  TRIP_CHECKS.forEach(function(text, k){
+    row(text, !!t.checks['d'+k], function(){ t.checks['d'+k] = !t.checks['d'+k]; tripSave(); });
+  });
+  t.extra.forEach(function(ex){
+    row(ex.text, !!ex.done, function(){ ex.done = !ex.done; tripSave(); }, function(){ t.extra = t.extra.filter(function(y){ return y.id !== ex.id; }); tripSave(); });
+  });
+}
+function tripRender(){
+  if(!tripEl('tripTimeline')) return;
+  tripClocks(); tripRenderNext(); tripRenderTimeline(); tripRenderChecks();
+}
+function tripTile(){
+  var el = tripEl('tileSumTrip'); if(!el) return;
+  var items = tripSorted();
+  if(!items.length){ el.textContent = 'הוסף טיסות ומלונות'; }
+  else {
+    var today = tripTodayStr(), first = items[0].date, last = items[items.length-1].endDate || items[items.length-1].date;
+    var toStart = tripDayDiff(today, first);
+    if(toStart > 0) el.textContent = 'עוד ' + toStart + (toStart === 1 ? ' יום' : ' ימים');
+    else if(tripDayDiff(today, last) >= 0) el.textContent = 'יום ' + (tripDayDiff(first, today) + 1) + ' בטיול';
+    else el.textContent = 'הטיול הסתיים';
+  }
+  tripRender();
+}
+
+Array.prototype.forEach.call(document.querySelectorAll('#tripTypeRow .chip'), function(c){
+  c.addEventListener('click', function(){ tripType = c.getAttribute('data-type'); tripApplyType(); });
+});
+tripEl('tripAddBtn').addEventListener('click', function(){
+  if(tripEl('tripForm').classList.contains('open')) tripCloseForm(); else { tripResetForm(); tripOpenForm(); }
+});
+tripEl('tripSaveBtn').addEventListener('click', tripSaveItem);
+tripEl('tripCancelBtn').addEventListener('click', tripCloseForm);
+tripEl('tripCheckAdd').addEventListener('click', function(){
+  var v = tripEl('tripCheckInput').value.trim(); if(!v) return;
+  tripS().extra.push({ id: Date.now().toString(36), text: v, done:false });
+  tripEl('tripCheckInput').value = ''; tripSave();
+});
+tripEl('tripExportBtn').addEventListener('click', function(){
+  var box = tripEl('tripBackupText'); box.value = JSON.stringify(tripS()); box.style.display = 'block'; box.focus(); box.select();
+  tripToast('סמן והעתק את הטקסט');
+});
+tripEl('tripImportBtn').addEventListener('click', function(){
+  var box = tripEl('tripBackupText');
+  if(box.style.display === 'none' || !box.value.trim()){ box.value = ''; box.style.display = 'block'; box.focus(); tripToast('הדבק כאן טקסט טיול ולחץ שוב על ייבוא'); return; }
+  var parsed; try{ parsed = JSON.parse(box.value); }catch(e){ tripToast('הטקסט לא תקין'); return; }
+  if(!parsed || !Array.isArray(parsed.items)){ tripToast('זה לא נראה כמו טקסט טיול'); return; }
+  if(!confirm('לייבא? זה יחליף את פרטי הטיול הקיימים.')) return;
+  i.trip = { items: parsed.items, checks: parsed.checks || {}, extra: parsed.extra || [] };
+  box.value = ''; box.style.display = 'none';
+  tripSave(); tripToast('הטיול יובא');
+});
+tripApplyType();
+setInterval(tripClocks, 30000);
+document.addEventListener('visibilitychange', function(){ if(!document.hidden) tripRender(); });
+try{ if('serviceWorker' in navigator && location.protocol.indexOf('http') === 0) navigator.serviceWorker.register('sw.js').catch(function(){}); }catch(e){}
+
+tripTile();
+})();</script>
+</body>
+</html>
